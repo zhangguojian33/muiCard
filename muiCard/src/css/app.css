@@ -1,0 +1,19 @@
+/*
+ *这是单独为hello mui准备的个性化css，可以覆盖标准mui的css定义；
+ * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
+ * 
+ * */
+.ico9 {
+	width: 40px;
+	height: 40px;
+	background: url(../images/ico2.png);
+	display: inline-block;
+}
+.content-wrapper, .right-side {
+	min-height: 100%;
+	background-color: #ecf0f5;
+	z-index: 800;
+}
+.header-color-gray {
+	background-color: ghostwhite;
+}

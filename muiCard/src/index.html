@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-Language" contect="zh-CN">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>muiCard</title>
+    <link rel="stylesheet" type="text/css" href="./plug-in/mui/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="./plug-in/mui/icons-extra.css">
+    <link rel="stylesheet" type="text/css" href="./css/app.css">
+    <style>
+        .nav-title {
+            padding: 44px 0;
+            height: 41px;
+            color: inherit;
+            background-color: #33bbdd;
+        }
+        .mui-off-canvas-left{
+            background-color: #efeff4;
+        }
+        input {
+            color: #000;
+        }
+        .mui-table-view-cell {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<script type="text/javascript" src="./plug-in/mui/mui.min.js"></script>
+<body>
+<div id="page" class="mui-off-canvas-wrap mui-draggable">
+    <!--侧滑菜单部分-->
+    <aside id="offCanvasSide" class="mui-off-canvas-left">
+        <div id="offCanvasSideScroll" class="mui-scroll-wrapper">
+            <div class="mui-scroll ">
+                <header class="mui-bar mui-bar-nav">
+                    <div class="mui-input-row mui-search">
+                        <input type="search" class="mui-input-clear" placeholder="搜索/最近浏览">
+                    </div>
+                </header>
+                <div class="mui-tab-item nav-title">
+                    <a><span class="mui-icon-extra mui-icon-extra-peoples">个人名片夹</span></a>
+                </div>
+                <ul class="mui-table-view">
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-flag">
+                                任务
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-compose">
+                                商谈记录
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-search">
+                                企业信息查询
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-chatboxes">
+                                消息中心
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-person">
+                                同事
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-contact">
+                                个人中心
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-gear">
+                                工具箱
+                            </span>
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            <span class="mui-icon mui-icon-help">
+                                帮助
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+    <!--主界面部分-->
+    <div class="mui-inner-wrap">
+        <header class="mui-bar mui-bar-nav">
+            <a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+            <a class="mui-action-back mui-btn mui-btn-link mui-pull-right">关闭</a>
+            <h1 class="mui-title">名片夹</h1>
+        </header>
+        <nav class="mui-bar mui-bar-tab">
+            <a href="#my-card" class="mui-tab-item mui-active" >
+                <span class="mui-icon mui-icon-personadd"></span>
+                <span class="mui-tab-label">我的名片</span>
+            </a>
+            <a href="#my-photo" class="mui-tab-item" >
+                <span class="ico9"></span>
+            </a>
+            <a href="#my-collection" class="mui-tab-item" >
+                <span class="mui-icon mui-icon-contact"></span>
+                <span class="mui-tab-label">我的收藏</span>
+            </a>
+        </nav>
+        <div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+            <div class="mui-scroll">
+                <div id="my-card" class="mui-control-content mui-active">
+                    <div class="mui-input-row mui-search">
+                        <input type="search" class="mui-input-clear" placeholder="在“所有名片”中搜索">
+                    </div>
+                </div>
+                <div id="my-photo" class="mui-control-content">
+                    <div class="title">这是div模式选项卡中的第2个子页面，该页面展示一个消息列表</div>
+
+                    <ul class="mui-table-view mui-table-view-chevron">
+                        <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 1</a></li>
+                        <li class="mui-table-view-cell"><a href="" class="mui-navigate-right">Item 2</a></li>
+                    </ul>
+                </div>
+                <div id="my-collection" class="mui-control-content">
+                    <div class="title">这是div模式选项卡中的第3个子页面，该页面展示一个通讯录示例.</div>
+                    <ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+                        <li class="mui-table-view-cell">
+                            <div class="mui-slider-cell">
+                                <div class="oa-contact-cell mui-table">
+                                    <div class="oa-contact-avatar mui-table-cell">
+                                        <img src="../images/60x60.gif" />
+                                    </div>
+                                    <div class="oa-contact-content mui-table-cell">
+                                        <div class="mui-clearfix">
+                                            <h4 class="oa-contact-name">叶文洁</h4>
+                                            <span class="oa-contact-position mui-h6">董事长</span>
+                                        </div>
+                                        <p class="oa-contact-email mui-h6">
+                                            yewenjie@sina.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- off-canvas backdrop -->
+        <div class="mui-off-canvas-backdrop"></div>
+    </div>
+</div>
+<script>
+    mui.init();
+    //侧滑容器父节点
+    var page = mui('#page');
+    //主界面容器
+    var offCanvasInner = page[0].querySelector('.mui-inner-wrap');
+    //菜单容器
+    var offCanvasSide = document.getElementById("offCanvasSide");
+    //移动效果是否为整体移动
+    var moveTogether = false;
+    //主界面‘显示侧滑菜单’按钮的点击事件
+    //菜单界面，‘关闭侧滑菜单’按钮的点击事件
+    document.getElementById('offCanvasHide').addEventListener('tap', function() {
+        page.offCanvas('close');
+    });
+    //主界面和侧滑菜单界面均支持区域滚动；
+    mui('#offCanvasSideScroll').scroll();
+    mui('#offCanvasContentScroll').scroll();
+    //实现ios平台原生侧滑关闭页面；
+    if (mui.os.plus && mui.os.ios) {
+        mui.plusReady(function() { //5+ iOS暂时无法屏蔽popGesture时传递touch事件，故该demo直接屏蔽popGesture功能
+            plus.webview.currentWebview().setStyle({
+                'popGesture': 'none'
+            });
+        });
+    }
+</script>
+</body>
+</html>
